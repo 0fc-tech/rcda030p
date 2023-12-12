@@ -17,3 +17,5 @@ rootProject.name = "EniShop"
 include(":app")
 include(":enishop")
 include(":mod3kotlin")
+include(":mod4ihm")
+include(":mod4databinding")

@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/enishop" />
             <option value="$PROJECT_DIR$/mod3kotlin" />
+            <option value="$PROJECT_DIR$/mod4databinding" />
+            <option value="$PROJECT_DIR$/mod4ihm" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
