@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_article"
+    app:startDestination="@id/listeArticleFragment">
+
+    <fragment
+        android:id="@+id/listeArticleFragment"
+        android:name="com.eniecole.enishop.ListeArticleFragment"
+        android:label="fragment_liste_article"
+        tools:layout="@layout/fragment_liste_article" >
+        <action
+            android:id="@+id/action_listeArticleFragment_to_detailArticleFragment"
+            app:destination="@id/detailArticleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailArticleFragment"
+        android:name="com.eniecole.enishop.DetailArticleFragment"
+        android:label="fragment_detail_article"
+        tools:layout="@layout/fragment_detail_article" />
+</navigation>
