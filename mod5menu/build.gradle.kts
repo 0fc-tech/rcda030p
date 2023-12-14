@@ -1,19 +1,14 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    //Génère des méthodes et des classes correspondants
-    //aux actions et Directions de la navigation
-    id("androidx.navigation.safeargs.kotlin")
-    //permet d'implémenter les interface "Parcelable"
-    id("kotlin-parcelize")
 }
 
 android {
-    namespace = "com.example.mod5navcomponent"
+    namespace = "com.example.mod5menu"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mod5navcomponent"
+        applicationId = "com.example.mod5menu"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -46,8 +41,6 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.5")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

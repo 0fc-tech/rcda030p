@@ -2,6 +2,11 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    //Génère des méthodes et des classes correspondants
+    //aux actions et Directions de la navigation
+    id("androidx.navigation.safeargs.kotlin")
+    //permet d'implémenter les interface "Parcelable"
+    id("kotlin-parcelize")
 }
 
 android {

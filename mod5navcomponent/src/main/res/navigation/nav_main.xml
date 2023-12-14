@@ -11,12 +11,16 @@
         android:label="fragment_button"
         tools:layout="@layout/fragment_button" >
         <action
-            android:id="@+id/action_buttonFragment_to_homeFragment2"
+            android:id="@+id/actionButtonToHome"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.mod5navcomponent.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="adresse"
+            app:argType="com.example.mod5navcomponent.Adresse" />
+    </fragment>
 </navigation>

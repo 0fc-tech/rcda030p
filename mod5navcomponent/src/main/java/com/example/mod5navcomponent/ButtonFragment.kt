@@ -22,7 +22,10 @@ class ButtonFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.button).setOnClickListener {
-            findNavController().navigate(R.id.action_buttonFragment_to_homeFragment2)
+            val direction = ButtonFragmentDirections.actionButtonToHome(
+                Adresse("rue du Chocolat Belge", 16,)
+            )
+            findNavController().navigate(direction)
         }
     }
 }
